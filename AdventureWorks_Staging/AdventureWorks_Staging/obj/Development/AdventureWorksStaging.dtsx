@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="2/8/2025 12:32:23 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="AdventureWorksStaging"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{C14043F4-B2B4-4D26-9FBE-A37C10C36316}">
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B3C70DCB-0D94-4C19-8840-5BD60CB9178A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7400,7 +7400,7 @@
         <NodeLayout
           Size="223.2,41.6"
           Id="Package\Extract Person Data to Staging"
-          TopLeft="41.9000000000001,716.699999999999" />
+          TopLeft="41.9000000000001,716.7" />
         <NodeLayout
           Size="260,41.6"
           Id="Package\Extract PersonAddress Data to Staging"
@@ -7416,7 +7416,7 @@
         <NodeLayout
           Size="287.2,41.6"
           Id="Package\Extract ProductSubCategory Data to Staging"
-          TopLeft="9.90000000000009,615.099999999999" />
+          TopLeft="9.90000000000009,615.1" />
         <NodeLayout
           Size="249.6,41.6"
           Id="Package\Extract SalesHeader Data to Staging"
@@ -7424,7 +7424,7 @@
         <NodeLayout
           Size="268.8,41.6"
           Id="Package\Extract SalesOrderDetail Data to Staging"
-          TopLeft="19.1,310.3" />
+          TopLeft="19.1000000000001,310.3" />
         <NodeLayout
           Size="247.2,41.6"
           Id="Package\Extract SalesPerson Data to Staging"
@@ -7549,28 +7549,6 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
-              Start="0,0"
-              End="0,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="153.5,656.699999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -7588,8 +7566,30 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="153.5,656.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="153.5,758.299999999999">
+          TopLeft="153.5,758.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7634,21 +7634,21 @@
         <NodeLayout
           Size="296,41.6"
           Id="Package\Extract BusinessEntityAddress Data to Staging"
-          TopLeft="5.50000000000011,1021.5" />
+          TopLeft="5.50000000000014,1021.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="153.5,961.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,60.0000000000002"
               Start="0,0"
-              End="0,52.5">
+              End="0,52.5000000000002">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,52.5000000000002" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7660,21 +7660,33 @@
         <NodeLayout
           Size="236.8,41.6"
           Id="Package\Extract Employee Data to Staging"
-          TopLeft="35.1000000000001,1123.1" />
+          TopLeft="428.571429483745,989.294117291803" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="153.5,1063.1">
+          TopLeft="301.5,1042.3">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000005"
+              EndConnector="127.071429483745,-32.2058827081974"
               Start="0,0"
-              End="0,52.5000000000005">
+              End="119.571429483745,-32.2058827081974">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5000000000005" />
+                    End="59.5357147418723,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.5357147418723,0"
+                    Point2="63.5357147418723,0"
+                    Point3="63.5357147418723,-4" />
+                  <mssgle:LineSegment
+                    End="63.5357147418723,-28.2058827081974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.5357147418723,-28.2058827081974"
+                    Point2="63.5357147418723,-32.2058827081974"
+                    Point3="67.5357147418723,-32.2058827081974" />
+                  <mssgle:LineSegment
+                    End="119.571429483745,-32.2058827081974" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
